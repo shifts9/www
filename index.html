@@ -5,11 +5,23 @@
 
   </head>
   <body>
+    <div class="wrapper">
+      <form method="post" class="blog-post" action="handler.php">
+        <p class="title">Title:</p><input type="text" name="title" class="title1"><br><br>
+        <p class="content">Content:</p><textarea name="textArea" cols="50" rows="10" class="textArea"></textarea>
+        <input type="submit" class="submit">
+      </form>
+    </div>
 
-    <form method="post" class="blog-post" action="handler.php">
-      Title:<input type="text" name="title"><br><br>
-      Content:<textarea name="textArea" cols="50" rows="10"></textarea>
-              <input type="submit" class="submit">
-    </form>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+      <script>
+
+      $(document).ready(function(){
+        console.log("jquery activated");
+      });
+
+
+      </script>
+
   </body>
 </html>
