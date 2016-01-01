@@ -1,12 +1,15 @@
 <html>
   <head>
     <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
   </head>
   <body>
-    <form method="get" class="blog-post">
-      Title:<input type="text" name="title"><br>
-      Content:<input type="text" class="content"><br>
-              <input type="submit">
+
+    <form method="post" class="blog-post" action="handler.php">
+      Title:<input type="text" name="title"><br><br>
+      Content:<textarea name="textArea" cols="50" rows="10"></textarea>
+              <input type="submit" class="submit">
     </form>
   </body>
 </html>
