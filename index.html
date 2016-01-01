@@ -13,14 +13,43 @@
       </form>
     </div>
 
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
       <script>
 
       $(document).ready(function(){
         console.log("jquery activated");
 
-        var
-        
+        var title = $('.title1');
+        var content = $('.textArea');
+        var body = $('')
+
+        title.on('click', function(){
+
+            console.log('title was clicked');
+
+            title.css({'background-color':'white'});
+            });
+
+        title.on('blur', function(){
+
+          console.log("clicked else where than the title");
+
+          title.css({'background-color':'silver'});
+        });
+
+        content.on('click', function(){
+
+          console.log("content was clicked");
+
+          content.css({'background-color':'white'});
+        });
+
+        content.on('blur', function(){
+
+          console.log("clicked else where than the content");
+
+          content.css({'background-color':'silver'});
+        });
       });
 
 
